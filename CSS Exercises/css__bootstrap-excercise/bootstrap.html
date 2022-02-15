@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Test</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        color:violet;
+        font-family: arial;
+    }
+
+    .row>div {
+        min-height: 50px;
+        background-color: #dedede;
+        border: 1px solid black;
+    }
+    .alert alert-success {
+        background-color: rgb(12, 148, 148);
+    }
+</style>
+<body>
+    <h1>Bootstrap Grid Example</h1>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+      <button type="button" class="btn btn-primary">Home</button>&nbsp&nbsp&nbsp&nbsp;
+      <button type="button" class="btn btn-secondary">Resume</button>&nbsp&nbsp&nbsp&nbsp;
+      <button type="button" class="btn btn-success">Contact</button>&nbsp&nbsp&nbsp&nbsp;
+    <div class="row">
+        <div class="col-xs-12 col-md-4"></div>
+        <div class="col-xs-6 col-sm-4 col-md-4"></div>
+        <div class="col-xs-6 col-sm-4 col-md-4"></div>
+        <div class="col-xs-12 col-sm-4 col-md-4"></div>
+        <div class="col-xs-6 col-md-4"></div>
+        <div class="col-xs-6 col-md-4"></div>
+
+        
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+          </div> 
+          
+        <!-- Copy and paste some snippets from https://getbootstrap.com/docs/4.4/getting-started/introduction/ and brose the Bootstrap UI library. -->
+
+    </div>
+</body>
+</html>

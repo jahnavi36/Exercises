@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Loop</title>
+</head>
+<body>
+  <ul class="fruits">
+    <!-- Nothing here, use javascript to embed the list items -->
+  </ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      // Here is an array
+      const fruit = ["Apples","Pears","Cherries","Grapes","Orange","Banana","Blueberries","Lemon","Mango","Papaya","Pineapple","Watermelon","Cantalope","Honeydew"];
+
+
+      const showSortedFruit = function(fruitArr){
+        // make a copy of the array so we don't change the original
+        const fruitArrCopy = [...fruitArr];
+
+        // sort the fruit
+        const sortedFruit = fruitArrCopy.sort();
+
+        // map over each fruit and append a list item with the name of a fruit inside of it
+
+        const fruitHtml = sortedFruit.map(function(fruitItem){
+          return `<li>${fruitItem}</li>`;
+        }).join('');
+
+        // Finally use jQuery to dump your html into the unordered list above
+        $('ul.fruits').append(fruitHtml);
+      }
+
+      showSortedFruit(fruit);
+
+
+      // BONUS: When you click a fruit, it should be removed from the list
+      $('ul.fruits').on('click','li',function() {
+        $(this).remove();
+      });
+
+    });
+  </script>
+</body>
+</html>
